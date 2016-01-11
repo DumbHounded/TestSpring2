@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="firstValue" class="java.lang.Integer">
+        <constructor-arg value="5"/>
+    </bean>
+
+    <bean id="secondValue" class="java.lang.Integer">
+        <constructor-arg value="7"/>
+    </bean>
+
+    <bean id="list" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <value>Первый элемент списка</value>
+                <value>Второй элемент списка</value>
+                <value>Третий элемент списка</value>
+                <value>Четвертый элемент списка</value>
+                <value>Пятый элемент списка</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="list2" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <value>Первый элемент списка+</value>
+                <value>Второй элемент списка+</value>
+                <value>Третий элемент списка+</value>
+                <value>Четвертый элемент списка+</value>
+                <value>Пятый элемент списка+</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
